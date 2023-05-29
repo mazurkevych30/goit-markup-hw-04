@@ -105,6 +105,7 @@ img {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .hd-lg {
@@ -218,11 +219,16 @@ img {
     height: 112px;
     margin-bottom: 8px;
     background-color: var(--color-light);
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.content-icon {
+    width: 64px;
+    height: 64px;
+}
 /* .team-list-title::before {
     display: block;
     content: "2";
@@ -288,6 +294,7 @@ img {
 .team-soc-list {
     margin-top: 8px;
     display: flex;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -306,8 +313,14 @@ img {
     justify-content: center;
 }
 
-.team-soc-icon {
+.team-soc-link:is(:hover, :focus) {
+    background-color: var(--color-pressed-state);
+}
 
+.team-soc-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-light);
 }
 
 /* ----------- customers ------------- */
@@ -342,6 +355,8 @@ img {
 }
 
 .customers-icon {
+    width: 104px;
+    height: 56px;
     fill: currentColor;
 }
 
@@ -376,12 +391,16 @@ img {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.container-logo {
+    margin-right: 120px;
 }
 
 .footer-soc-list {
     display: flex;
-    gap: 14px;
+    gap: 16px;
 }
 
 .footer-soc-item {
@@ -397,6 +416,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-soc-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-light);
 }
 
 .footer-soc-link:is(:focus,:hover) {
@@ -427,7 +452,12 @@ img {
     flex-basis: calc((100% - 48px) / 3);
 }
 
-.gallery-item:is(:hover, :focus) {
+
+.gallery-link {
+    display: block;
+}
+
+.gallery-link:is(:hover, :focus) {
     border: 1px solid var(--color-light);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
