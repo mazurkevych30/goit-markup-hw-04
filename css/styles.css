@@ -226,16 +226,8 @@ img {
 }
 
 .content-icon {
-    width: 64px;
-    height: 64px;
+  
 }
-/* .team-list-title::before {
-    display: block;
-    content: "2";
-    height: 112px;
-    background-color: red;
-} */
-
 /* ----------- doing ------------- */
 
 .doing {
@@ -318,8 +310,6 @@ img {
 }
 
 .team-soc-icon {
-    width: 16px;
-    height: 16px;
     fill: var(--color-light);
 }
 
@@ -348,6 +338,7 @@ img {
     width: 100%;
     height: 100%;
     border: 1px solid var(--color-subtle-text);
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,8 +346,6 @@ img {
 }
 
 .customers-icon {
-    width: 104px;
-    height: 56px;
     fill: currentColor;
 }
 
@@ -419,8 +408,8 @@ img {
 }
 
 .footer-soc-icon {
-    width: 24px;
-    height: 24px;
+    /* width: 24px;
+    height: 24px; */
     fill: var(--color-light);
 }
 
